@@ -54,4 +54,17 @@ nav li {
     top: 50px;
     margin: 0;
     text-align: right;
+    background-image: url();
+}
+
+/* Flexbox Properties*/
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
 }
