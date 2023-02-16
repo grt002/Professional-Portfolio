@@ -1,10 +1,10 @@
 :root {
     --primary-color: #012041;
     --section-padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
     color: #333;
     margin: 0;
 }
@@ -28,10 +28,6 @@ header {
     color: white;
     text-decoration: none;
     font-weight: bold;
-}
-
-.nav-link:hover {
-    text-decoration: underline;
 }
 
 ul {
@@ -77,7 +73,7 @@ li a {
 }
 
 .subtitle-image {
-    max-width: 25%;
+    max-width: 12.5%;
     height: auto;
 }
 
@@ -110,19 +106,58 @@ li a {
 }
 
 .project {
-    flex-basis: calc(50% - 10px);
-    margin: 5px;
-}
-
-.project:first-child {
-    flex-basis: calc(100% - 10px);
-}
-
-.project:not(:first-child) {
-    margin-top: 50px;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 10px;
 }
 
 .project img {
     width: 50%;
     height: auto;
+}
+
+.project:nth-child(1) {
+    width: 100%;
+}
+
+.project:nth-child(n+2) {
+    margin-top: 0px;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 14px;
+    }
+
+    li {
+        font-size: 12px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .toggle-nav {
+        display: block;
+    }
+}
+
+@media (min-width: 601px) {
+    body {
+        font-size: 18px;
+        padding: 1em;
+    }
+
+    .nav-menu {
+        display: block;
+    }
+
+    .toggle-nav {
+        display: none;
+    }
 }
