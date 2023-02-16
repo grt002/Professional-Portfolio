@@ -26,10 +26,14 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Usage
 
-N/A
+To view this webpage, you can find the deployed application URL below:
+
+Deployed URL: https://grt002.github.io/Challenge-2/
 
 ## Credits
 
 Followed instructions from the Bootcamp Spot course from Module 2: Advanced CSS to construct the files in this portfolio.
 
 ## License
+
+At the time of deployment, this page will be open source and free to use. A license will be added to this readme at a later time.
